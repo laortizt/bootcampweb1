@@ -1,0 +1,178 @@
+/* * selector universal*/
+
+/* -----------------------------------------INICIO---------------------------------------------- */
+*{
+   margin: 0;
+   padding: 5px;
+}
+
+body{
+    background-color: rgb(250, 23, 220);
+}
+
+/* Alinear el logo y el menu */
+.main-menu{
+    display: flex;
+    align-items: center;
+}
+/* Alinear el menu a la izquierda Y tamaño letra*/
+.opt-menu{
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 22px;
+    font-family: 'Gloria Hallelujah', cursive;  
+}
+/* Quitar los puntos de la lista */
+.opt-menu li{
+  list-style: none; 
+   width: 15%; /* Espacio entre los titulos del nav*/
+   color: black;
+}
+/* Propiedad de la navegacion con el cursosr */
+.opt-menu a:hover{
+    background-color: #00afc7;
+    color: #e0ee51;
+    border-radius: 30px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px 3px#64ba66;
+    cursor: pointer;  
+}
+/* Contenedor de las imagenes */
+.flex-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+/* Propiedad de las imagenes */
+.flex-content img{
+    width: 300px;
+    height: 200px;   
+}
+   
+/* ------------------------ EJEMPLO CONTENEDOR CON SECCION Y PARRAFO ------------------------------ */
+
+.titulo1{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+/*ubicar orientacion section*/
+.main-charecters{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content:center; 
+}
+.charecter{
+    width: 25%;
+    height: 20%;
+    margin: 5px; 
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    
+}
+.container img{
+    border-radius: 70%;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.fa-cat{
+    color:white;
+}
+/* ------------------------------- SOBRE MI ------------------------------------------ */
+.laot img{
+    border-radius: 50%;
+}
+.body-aboutme{
+    background-color:rgb(248, 104, 135); ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body-aboutme .main-menu {
+    width: 100%;
+    text-align: center;  
+}
+.body-aboutme .opt-menu {
+    justify-content: center;
+}
+.container-me{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: black;
+}
+
+/* ------------------------------- FORMULARIO DE CONTACTO ------------------------------------------ */
+.body-contact{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-contact .main-menu {
+    width: 100%;
+    text-align: center;   
+}
+
+.body-contact .opt-menu {
+    justify-content: center;
+}
+
+.container-contact {
+    text-align: center;
+}
+
+.bienvenida img {
+    width: 300px;
+    height: auto;
+}
+
+.formulario{
+    background-color: wheat;
+    width: 40%;
+    border-radius: 10%;
+    text-align: center;
+}
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-form{
+    margin-bottom: 2%;
+    
+}
+.input-form > div{
+    width: 30%;
+    float: left;
+    text-align: right;  
+    
+}
+.input-form input[type="text"],
+.input-form input[type="number"],
+.input-form input[type="date"],
+.input-form input[type="password"] {
+    width: 30%;
+  
+}
+.form-button{
+    text-align: center;
+    
+}
+.form-button button{
+    background-color: black;
+    color: white;
+    font-family: 'Gloria Hallelujah', cursive;
+    border-radius: 60%;
+}

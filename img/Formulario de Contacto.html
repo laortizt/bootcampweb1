@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulario de Contacto</title>
+    
+<link href="Formulario%20de%20Contacto_files/css2.css" rel="stylesheet"><link rel="stylesheet" href="Formulario%20de%20Contacto_files/style.css"></head>
+
+<body class="body-contact">
+    <!--BIENVENIDA-->
+    <div class="bienvenida">
+        <img src="Formulario%20de%20Contacto_files/bienvenida.png" alt="bienvenida">
+    </div>
+
+    <nav class="main-menu">
+        <!--NAVEGACION-->   
+        <ul class="main-menu opt-menu contacto"> <!--se puede agregar más clases a un elemento con un espacio-->
+            <!--LI Elementos de la lista-->
+            <li> <a href="http://127.0.0.1:5500/index.html" style="text-decoration:none">Inicio</a></li>
+            <li> <a href="http://127.0.0.1:5500/about_me.html" style="text-decoration:none">Sobre mi</a></li>
+            <li> <a target="_blank" href="http://127.0.0.1:5500/contact.html" style="text-decoration:none">Contacto</a></li>
+        </ul>
+    </nav>
+<section class="formulario">
+    <div class="container-contact">
+        <h1>Formulario de contacto</h1>
+    </div>
+
+    <form method="GET" action="" class="form-flex">
+        <div class="input-form">
+           <div><label for="nombre">Nombre</label></div> 
+            <input id="nombre" name="nombre" type="text" required=""> 
+
+        </div>
+        <div class="input-form">
+            <div><label for="apellido">Apellido</label></div>
+            <input id="apellido" name="apellido" type="text" required="">
+        </div>
+        <div class="input-form">
+            <div><label for="edad">Edad</label></div>
+            <input id="edad" name="edad" type="number" required="">
+        </div>
+        <div class="input-form">
+            <div><label for="telefono">Telefono</label></div>
+            <input id="telefono" name="telefono" type="number" required="">
+        </div>
+        <div class="input-form">
+            <div><label for="correo">Correo</label></div>
+            <input id="correo" name="correo" type="text" required="">
+        </div>
+        <div class="input-form">
+            <div><label for="contraseña">Contraseña</label></div>
+            <input id="contraseña" name="contraseña" type="password" required="">
+        </div>
+        <div class="input-form">
+            <div><label for="fechaNacimiento">Fecha de Nacimiento</label></div>
+            <input id="fechaNacimiento" name="fechaNacimiento" type="date" required="">
+        </div>
+        <!--para seleccionar genero-->  
+        <div class="input-form">
+            <input id="mujer" name="genero" type="radio">
+            <label for="mujer">Mujer</label>
+            <input id="hombre" name="genero" type="radio">
+            <label for="hombre">Hombre</label>
+        </div>
+        <div class="input-form">
+            <h4> Deporte Favorito:</h4>
+            
+            <input id="futbol" name="futbol" type="checkbox">
+            <label for="futbol">Futbol</label>
+            <input id="baloncesto" name="baloncesto" type="checkbox">
+            <label for="baloncesto">Baloncesto</label>
+            <input id="ciclismo" name="ciclismo" type="checkbox">
+            <label for="ciclismo">Ciclismo</label>
+            <input id="natacion" name="natacion" type="checkbox">
+            <label for="natacion">Natación</label>
+        </div>
+        
+        
+        <div class="form-button">
+            <input id="identificacion" type="hidden" value="1">
+            <button type="submit">Enviar</button> <!--para enviar formulario--> 
+        </div>
+         
+        
+        <!--text: Permite agregar texto,número,etc-->  
+        <!--Number: Permite agregar solo número-->  
+        <!--Email: Permite agregar correos electronicos-->  
+        <!--Date: Permite seleccionar fechas-->  
+        <!--Week: Permite seleccionar la fecha-->  
+        <!--Hidden: Permite crear un input oculto-->  
+        <!--Password: Permite crear un input donde lo que se escribe no se ve-->  
+        <!--Button: Permite que el input sea un boton-->  
+        <!--Submit: Permite que el input sea un boton-->  
+    </form>
+</section>
+    
+    
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<div></div></body></html>
