@@ -109,6 +109,11 @@ footer{
     font-family: 'Gloria Hallelujah', cursive;
     color: black;
 }
+/* ----BOTON CAMBIO DE NOMBRE ----------- */
+.cambiarNombre{
+    border-radius: 8px;
+    border: 2px dotted #00afc7;
+}
 
 /* ------------------------------- FORMULARIO DE CONTACTO ------------------------------------------ */
 .body-contact{
