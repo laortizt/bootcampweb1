@@ -86,33 +86,57 @@ footer{
 .fa-cat{
     color:white;
 }
+/* ----BOTON CAMBIO DE NOMBRE ----------- */
+.cambiarNombre{
+    border-radius: 8px;
+    border: 2px dotted #00afc7;
+}
+
 /* ------------------------------- SOBRE MI ------------------------------------------ */
 .laot img{
     border-radius: 50%;
 }
 .body-aboutme{
-    background-color:rgb(248, 104, 135); ;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 .body-aboutme .main-menu {
     width: 100%;
     text-align: center;  
 }
+
 .body-aboutme .opt-menu {
     justify-content: center;
 }
 .container-me{
     display: flex;
-    flex-direction: column;
+    width: 70%;
     font-family: 'Gloria Hallelujah', cursive;
-    color: black;
 }
-/* ----BOTON CAMBIO DE NOMBRE ----------- */
-.cambiarNombre{
-    border-radius: 8px;
-    border: 2px dotted #00afc7;
+.gustos{
+    width: 50%;
+    color: black;
+    font-size:20px;
+    border: 2px rgb(17, 189, 174) dotted;
+    
+    
+}
+.lenguajes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.loglen {
+    width: 60%;
+}
+
+.logleng img{
+    width: 125px;
+    height:125px;
+    border-radius: 100px;
 }
 
 /* ------------------------------- FORMULARIO DE CONTACTO ------------------------------------------ */
